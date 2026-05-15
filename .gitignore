@@ -1,0 +1,80 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# API keys and secrets
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.yaml
+secrets.yml
+credentials.json
+config/secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Data and artifacts (large files)
+data/
+artifacts/
+models/*.pkl
+models/*.joblib
+models/*.h5
+*.parquet
+*.sav
+*.SAV
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Streamlit
+.streamlit/secrets.toml

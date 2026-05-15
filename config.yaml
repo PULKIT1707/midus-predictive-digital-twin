@@ -1,0 +1,43 @@
+data_dir: data
+artifacts_dir: artifacts
+models_dir: models
+manifest_path: artifacts/phase1_feature_manifest__BASELINE.csv
+
+# Shared respondent identifier across waves (detected in M1/M2/M3 .sav metadata)
+join_id: M2ID
+family_id: M2FAMNUM
+
+outcome:
+  wave: M3
+  dataset: data/MIDUS 3/M3_P3_BTACT_N3291_20210922.sav
+  code: C3TCOMP
+
+prior_cognition:
+  wave: M2
+  dataset: data/MIDUS 2/M2_P3_BTACT_N4512_20211123.sav
+  code: B3TCOMPZ1
+
+sources:
+  m1_survey:
+    wave: M1
+    dataset: data/MIDUS 1/M1_P1_SURVEY_N7108_20190116.sav
+  m2_survey:
+    wave: M2
+    dataset: data/MIDUS 2/M2_P1_SURVEY_N4963_20200720.sav
+
+split:
+  test_size: 0.2
+  random_state: 42
+
+model:
+  random_forest:
+    n_estimators: 500
+    random_state: 42
+    n_jobs: -1
+    max_depth: null
+    min_samples_leaf: 2
+
+shap:
+  enabled: true
+  max_background: 500
+  max_explain: 2000

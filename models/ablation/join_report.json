@@ -1,0 +1,12 @@
+{
+  "after_all_rows": 2735,
+  "after_m1_m2_rows": 4963,
+  "join_id": "M2ID",
+  "m1_rows": 7108,
+  "m2_rows": 4963,
+  "m3_outcome_rows": 3291,
+  "one_to_one_ok": true,
+  "overlap_m1_m2": 4963,
+  "overlap_m1_m3": 2961,
+  "overlap_m2_m3": 2960
+}
