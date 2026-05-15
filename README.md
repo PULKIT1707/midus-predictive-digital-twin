@@ -269,7 +269,7 @@ If you use this code in your research, please cite:
 
 ```
 MIDUS Predictive Digital Twin Pipeline
-https://github.com/[your-username]/windsurf-project
+https://github.com/PULKIT1707/midus-predictive-digital-twin
 ```
 
 ## Contact
